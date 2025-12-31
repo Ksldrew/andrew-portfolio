@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andrew Lim | AI Portfolio</title>
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    .wrap{max-width:960px; margin:0 auto; padding:42px 18px}
+    .hero{
+      display:flex; gap:18px; align-items:flex-start; justify-content:space-between;
+      padding:22px; background:var(--card); border:1px solid var(--line); border-radius:14px;
+    }
+    .hero h1{margin:0 0 6px 0; font-size:30px}
+    .hero .sub{color:var(--muted); margin:0}
+    .tag{
+      display:inline-block; padding:6px 10px; border-radius:999px;
+      background:#eef2ff; border:1px solid #dbeafe; color:#1e3a8a; font-size:12px; margin-top:10px;
+    }
+    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:16px}
+    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px;
+    }
+    h2{margin:0 0 10px 0; font-size:18px}
+    p{margin:0 0 10px 0; line-height:1.6}
+    ul{margin:0; padding-left:18px; line-height:1.7}
+    .full{grid-column:1 / -1}
+    .divider{height:1px; background:var(--line); margin:12px 0}
+    .contact p{margin:6px 0}
+    a{color:#1d4ed8; text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <section class="hero">
+      <div>
+        <h1>Andrew Lim</h1>
+        <p class="sub">Computer Science (Artificial Intelligence) | Healthcare AI & Interpretable Models</p>
+        <span class="tag">Modular TSK-FIS • Explainable AI • Python/PyTorch</span>
+      </div>
+      <div style="text-align:right; color:var(--muted); font-size:13px; line-height:1.6;">
+        <div>Malaysia</div>
+        <div>Available for Internship / Project Collaboration</div>
+      </div>
+    </section>
+
+    <section class="grid">
+
+      <div class="card full">
+        <h2>Profile Summary</h2>
+        <p>
+          I am a Computer Science student specialising in Artificial Intelligence, focusing on interpretable decision-support systems for healthcare.
+          My work emphasises fuzzy inference modelling (TSK-FIS), modular architecture design, and explainability for transparent predictions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Key Skills</h2>
+        <ul>
+          <li>Machine Learning & Model Evaluation</li>
+          <li>Fuzzy Logic & TSK-FIS (Traditional & Modular)</li>
+          <li>Explainable AI (XAI) & Interpretability Design</li>
+          <li>Data Preprocessing (Normalisation, Balancing, Outlier Handling)</li>
+          <li>Python, PyTorch, NumPy, Pandas, Matplotlib</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Tools & Technologies</h2>
+        <p><strong>AI/ML:</strong> Python, PyTorch, NumPy, Pandas, Matplotlib</p>
+        <p><strong>Dev:</strong> VS Code / Visual Studio, Git & GitHub</p>
+        <p><strong>App:</strong> .NET MAUI (Prototype / Integration)</p>
+      </div>
+
+      <div class="card full">
+        <h2>Academic Project</h2>
+        <p><strong>Heart Disease Risk Prediction using Modular TSK-FIS</strong></p>
+        <div class="divider"></div>
+        <ul>
+          <li>Designed a modular fuzzy architecture (multiple fuzzy modules + fusion) to improve scalability and clarity.</li>
+          <li>Compared traditional monolithic TSK-FIS versus modular TSK-FIS in terms of system structure and interpretability.</li>
+          <li>Targeted transparent healthcare decision support with structured rule reasoning and explainable outputs.</li>
+        </ul>
+      </div>
+
+      <div class="card full contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> your_email_here</p>
+        <p><strong>WhatsApp:</strong> your_number_here</p>
+        <p><strong>Portfolio Link:</strong> <a href="your_link_here" target="_blank" rel="noopener">your_link_here</a></p>
+        <p style="color:var(--muted); font-size:13px; margin-top:10px;">
+          Tip: After your site is published, replace "your_link_here" with your final URL.
+        </p>
+      </div>
+
+    </section>
+
+    <footer>© 2025 Andrew Lim | AI Portfolio</footer>
+  </div>
+</body>
+</html>
