@@ -1,112 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andrew Lim | AI Portfolio</title>
-  <style>
-    :root{
-      --bg:#f6f8fb; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: Arial, Helvetica, sans-serif;
-      background:var(--bg); color:var(--text);
-    }
-    .wrap{max-width:960px; margin:0 auto; padding:42px 18px}
-    .hero{
-      display:flex; gap:18px; align-items:flex-start; justify-content:space-between;
-      padding:22px; background:var(--card); border:1px solid var(--line); border-radius:14px;
-    }
-    .hero h1{margin:0 0 6px 0; font-size:30px}
-    .hero .sub{color:var(--muted); margin:0}
-    .tag{
-      display:inline-block; padding:6px 10px; border-radius:999px;
-      background:#eef2ff; border:1px solid #dbeafe; color:#1e3a8a; font-size:12px; margin-top:10px;
-    }
-    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:16px}
-    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
-    .card{
-      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px;
-    }
-    h2{margin:0 0 10px 0; font-size:18px}
-    p{margin:0 0 10px 0; line-height:1.6}
-    ul{margin:0; padding-left:18px; line-height:1.7}
-    .full{grid-column:1 / -1}
-    .divider{height:1px; background:var(--line); margin:12px 0}
-    .contact p{margin:6px 0}
-    a{color:#1d4ed8; text-decoration:none}
-    a:hover{text-decoration:underline}
-    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Lim | AI & CS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
 
-    <section class="hero">
-      <div>
-        <h1>Andrew Lim</h1>
-        <p class="sub">Computer Science (Artificial Intelligence) | Healthcare AI & Interpretable Models</p>
-        <span class="tag">Modular TSK-FIS • Explainable AI • Python/PyTorch</span>
-      </div>
-      <div style="text-align:right; color:var(--muted); font-size:13px; line-height:1.6;">
-        <div>Malaysia</div>
-        <div>Available for Internship / Project Collaboration</div>
-      </div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Andrew.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-split">
+            
+            <div class="hero-image">
+                <img src="profile.png" alt="Andrew Lim" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-box')">
+                <div class="placeholder-fallback">Your Photo</div> 
+            </div>
+
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm Andrew Lim</span>
+                <h1>Building Transparent <br> AI for Healthcare.</h1>
+                <p>Computer Science Undergraduate specializing in Explainable AI (XAI), Modular Fuzzy Inference Systems, and .NET Development.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank"><i class="fas fa-download"></i> Resume</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Research</h3>
+                    <p>Focus on TSK-FIS (Fuzzy Inference Systems), Modular Architectures, and XAI for medical diagnostics.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fab fa-python"></i></div>
+                    <h3>Data Science</h3>
+                    <p>Proficient in Python, PyTorch, NumPy, Pandas, and Scikit-Learn for data preprocessing and modeling.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>App Development</h3>
+                    <p>Experience building cross-platform mobile apps using .NET MAUI, C#, and XAML.</p>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section class="grid">
+    <section id="projects" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
 
-      <div class="card full">
-        <h2>Profile Summary</h2>
-        <p>
-          I am a Computer Science student specialising in Artificial Intelligence, focusing on interpretable decision-support systems for healthcare.
-          My work emphasises fuzzy inference modelling (TSK-FIS), modular architecture design, and explainability for transparent predictions.
-        </p>
-      </div>
+                <article class="project-card">
+                    <div class="card-content">
+                        <div class="badge">Capstone Research</div>
+                        <h3>Heart Disease Risk Prediction</h3>
+                        <p>A Modular TSK-FIS model designed to predict heart attacks. Unlike black-box models, this system provides transparent "If-Then" rules.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Fuzzy Logic</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                    <a href="#" class="link-text">View Research <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-      <div class="card">
-        <h2>Key Skills</h2>
-        <ul>
-          <li>Machine Learning & Model Evaluation</li>
-          <li>Fuzzy Logic & TSK-FIS (Traditional & Modular)</li>
-          <li>Explainable AI (XAI) & Interpretability Design</li>
-          <li>Data Preprocessing (Normalisation, Balancing, Outlier Handling)</li>
-          <li>Python, PyTorch, NumPy, Pandas, Matplotlib</li>
-        </ul>
-      </div>
+                <article class="project-card">
+                    <div class="card-content">
+                        <div class="badge">Software Dev</div>
+                        <h3>.NET MAUI Mobile App</h3>
+                        <p>A cross-platform prototype application. Solved complex challenges in XAML UI binding and C# backend integration.</p>
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>.NET MAUI</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+                    <a href="#" class="link-text">View Code <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-      <div class="card">
-        <h2>Tools & Technologies</h2>
-        <p><strong>AI/ML:</strong> Python, PyTorch, NumPy, Pandas, Matplotlib</p>
-        <p><strong>Dev:</strong> VS Code / Visual Studio, Git & GitHub</p>
-        <p><strong>App:</strong> .NET MAUI (Prototype / Integration)</p>
-      </div>
+                <article class="project-card">
+                    <div class="card-content">
+                        <div class="badge">Data Analysis</div>
+                        <h3>Healthcare Data Pipeline</h3>
+                        <p>Exploratory data analysis (EDA) suite handling normalization, class balancing, and outlier detection.</p>
+                        <div class="tags">
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Data Cleaning</span>
+                        </div>
+                    </div>
+                    <a href="#" class="link-text">View Notebook <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-      <div class="card full">
-        <h2>Academic Project</h2>
-        <p><strong>Heart Disease Risk Prediction using Modular TSK-FIS</strong></p>
-        <div class="divider"></div>
-        <ul>
-          <li>Designed a modular fuzzy architecture (multiple fuzzy modules + fusion) to improve scalability and clarity.</li>
-          <li>Compared traditional monolithic TSK-FIS versus modular TSK-FIS in terms of system structure and interpretability.</li>
-          <li>Targeted transparent healthcare decision support with structured rule reasoning and explainable outputs.</li>
-        </ul>
-      </div>
-
-      <div class="card full contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> your_email_here</p>
-        <p><strong>WhatsApp:</strong> your_number_here</p>
-        <p><strong>Portfolio Link:</strong> <a href="your_link_here" target="_blank" rel="noopener">your_link_here</a></p>
-        <p style="color:var(--muted); font-size:13px; margin-top:10px;">
-          Tip: After your site is published, replace "your_link_here" with your final URL.
-        </p>
-      </div>
-
+            </div>
+        </div>
     </section>
 
-    <footer>© 2025 Andrew Lim | AI Portfolio</footer>
-  </div>
+    <section id="contact" class="section contact-section">
+        <div class="container center-text">
+            <h2>Let's Connect</h2>
+            <p>I am currently available for internships and research collaborations in Malaysia.</p>
+            <a href="mailto:your_email@example.com" class="btn btn-primary big-btn">Send Email</a>
+            
+            <div class="social-links">
+                
+                <a href="https://www.linkedin.com/in/andrew-lim-080896336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/Ksldrew" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://wa.me/qr/GBNCFEST4KIVO1" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Andrew Lim. Computer Science Undergraduate.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="btn-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
 </body>
 </html>
