@@ -16,7 +16,10 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
+
+                <!-- Resume opens in a new page (no forced download) -->
+                <li><a href="resume.html" target="_blank" rel="noopener">Resume</a></li>
+
                 <li><a href="#contact" class="btn-nav">Contact</a></li>
             </ul>
         </div>
@@ -24,10 +27,10 @@
 
     <header id="home" class="hero">
         <div class="container hero-split">
-            
+
             <div class="hero-image">
-                <img src="profile.jpg" alt="Andrew Lim" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-box')">
-                <div class="placeholder-fallback">Your Photo</div> 
+                <img src="profile.png" alt="Andrew Lim" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-box')">
+                <div class="placeholder-fallback">Your Photo</div>
             </div>
 
             <div class="hero-text">
@@ -36,8 +39,10 @@
                 <p>Computer Science Undergraduate specializing in Explainable AI (XAI), Modular Fuzzy Inference Systems, and .NET Development.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#resume" class="btn btn-secondary">
-                        <i class="fas fa-file-alt"></i> View Resume
+
+                    <!-- Resume button opens preview page -->
+                    <a href="resume.html" class="btn btn-secondary" target="_blank" rel="noopener">
+                        <i class="fas fa-file-alt"></i> Resume
                     </a>
                 </div>
             </div>
@@ -49,7 +54,7 @@
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
-                
+
                 <div class="skill-card">
                     <div class="icon-box"><i class="fas fa-brain"></i></div>
                     <h3>AI & Research</h3>
@@ -88,7 +93,7 @@
                             <span>Research</span>
                         </div>
                     </div>
-                    <a href="#" class="link-text">View Research <i class="fas fa-arrow-right"></i></a>
+                    <!-- Removed: View Research -->
                 </article>
 
                 <article class="project-card">
@@ -102,7 +107,7 @@
                             <span>Mobile</span>
                         </div>
                     </div>
-                    <a href="#" class="link-text">View Code <i class="fas fa-arrow-right"></i></a>
+                    <!-- Removed: View Code -->
                 </article>
 
                 <article class="project-card">
@@ -116,24 +121,9 @@
                             <span>Data Cleaning</span>
                         </div>
                     </div>
-                    <a href="#" class="link-text">View Notebook <i class="fas fa-arrow-right"></i></a>
+                    <!-- Removed: View Notebook -->
                 </article>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- ✅ RESUME SECTION (Opens PDF inside page, no download) -->
-    <section id="resume" class="section">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-
-            <div class="resume-viewer">
-                <iframe 
-                    src="resume.pdf"
-                    title="Andrew Lim Resume"
-                    loading="lazy">
-                </iframe>
             </div>
         </div>
     </section>
@@ -143,18 +133,18 @@
             <h2>Let's Connect</h2>
             <p>I am currently available for internships and research collaborations in Malaysia.</p>
             <a href="mailto:your_email@example.com" class="btn btn-primary big-btn">Send Email</a>
-            
+
             <div class="social-links">
-                
-                <a href="https://www.linkedin.com/in/andrew-lim-080896336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+
+                <a href="https://www.linkedin.com/in/andrew-lim-080896336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a href="https://github.com/Ksldrew" target="_blank">
+                <a href="https://github.com/Ksldrew" target="_blank" rel="noopener">
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="https://wa.me/qr/GBNCFEST4KIVO1" target="_blank">
+                <a href="https://wa.me/qr/GBNCFEST4KIVO1" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i>
                 </a>
 

@@ -1,13 +1,13 @@
 /* --- 1. DARK THEME VARIABLES --- */
 :root {
-    --bg-body: #0f172a;       
-    --bg-card: #1e293b;       
-    --bg-nav: rgba(15, 23, 42, 0.95); 
-    --text-main: #f8fafc;     
-    --text-muted: #94a3b8;    
-    --primary: #38bdf8;       
-    --primary-hover: #0ea5e9; 
-    --border: #334155;        
+    --bg-body: #0f172a;
+    --bg-card: #1e293b;
+    --bg-nav: rgba(15, 23, 42, 0.95);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #38bdf8;
+    --primary-hover: #0ea5e9;
+    --border: #334155;
     --font: 'Poppins', sans-serif;
 }
 
@@ -44,7 +44,7 @@ ul { list-style: none; }
 .btn-nav { background: var(--primary); color: var(--bg-body) !important; padding: 8px 20px; border-radius: 50px; font-weight: 600; }
 .btn-nav:hover { background: var(--primary-hover); }
 
-/* --- 3. HERO SECTION (Updated for Photo) --- */
+/* --- 3. HERO SECTION (Photo + Text) --- */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -80,7 +80,6 @@ ul { list-style: none; }
     z-index: 2;
     transition: transform 0.3s;
 }
-
 .hero-image img:hover { transform: scale(1.02); }
 
 /* Fallback box if image is missing */
@@ -100,20 +99,19 @@ ul { list-style: none; }
 
 /* Text Styling */
 .hero-text { flex: 1.2; }
-
-.greeting { 
-    color: var(--primary); 
-    font-weight: 600; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    font-size: 0.9rem; 
-    margin-bottom: 15px; 
-    display: block; 
+.greeting {
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
 }
-
 .hero h1 { font-size: 3.2rem; line-height: 1.1; color: var(--text-main); margin-bottom: 20px; }
 .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 90%; margin-bottom: 30px; }
 
+/* Buttons */
 .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; }
 .btn { padding: 12px 30px; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
 .btn-primary { background: var(--primary); color: var(--bg-body); }
@@ -135,15 +133,30 @@ ul { list-style: none; }
 h3 { margin-bottom: 10px; color: var(--text-main); font-size: 1.25rem; }
 p { color: var(--text-muted); font-size: 0.95rem; }
 
-/* --- 6. PROJECT SPECIFICS --- */
+/* Project specifics */
 .project-card { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
 .badge { display: inline-block; background: rgba(56, 189, 248, 0.1); color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; text-transform: uppercase; margin-bottom: 15px; }
 .tags { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
 .tags span { font-size: 0.8rem; color: var(--text-main); background: #334155; padding: 4px 10px; border-radius: 4px; }
-.link-text { margin-top: 25px; font-weight: 600; font-size: 0.9rem; color: var(--primary); display: flex; align-items: center; gap: 8px; }
-.link-text:hover { gap: 12px; }
 
-/* --- 7. RESUME VIEWER (NEW) --- */
+/* --- 6. RESUME PAGE (resume.html) --- */
+.resume-page { padding-top: 120px; }
+
+.resume-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* PDF Viewer */
 .resume-viewer {
     width: 100%;
     height: 900px;
@@ -152,14 +165,13 @@ p { color: var(--text-muted); font-size: 0.95rem; }
     border: 1px solid var(--border);
     background: var(--bg-card);
 }
-
 .resume-viewer iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-/* --- 8. FOOTER & CONTACT --- */
+/* --- 7. FOOTER & CONTACT --- */
 .center-text { text-align: center; }
 .big-btn { padding: 15px 40px; font-size: 1.1rem; margin-top: 25px; }
 .social-links { margin-top: 40px; display: flex; justify-content: center; gap: 20px; }
@@ -167,7 +179,7 @@ p { color: var(--text-muted); font-size: 0.95rem; }
 .social-links a:hover { background: var(--primary); color: var(--bg-body); border-color: var(--primary); }
 footer { padding: 40px 0; text-align: center; font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid var(--border); background: var(--bg-body); margin-top: 50px; }
 
-/* --- 9. BACK TO TOP BUTTON --- */
+/* --- 8. BACK TO TOP BUTTON --- */
 .btn-top {
     position: fixed;
     bottom: 30px;
@@ -187,7 +199,7 @@ footer { padding: 40px 0; text-align: center; font-size: 0.9rem; color: var(--te
 }
 .btn-top:hover { background: var(--primary-hover); transform: translateY(-3px); }
 
-/* --- 10. MOBILE RESPONSIVE --- */
+/* --- 9. MOBILE RESPONSIVE --- */
 @media (max-width: 900px) {
     .hero-split { flex-direction: column; text-align: center; margin-top: 30px; }
     .hero-image img, .placeholder-box { width: 250px; height: 250px; }
@@ -198,6 +210,5 @@ footer { padding: 40px 0; text-align: center; font-size: 0.9rem; color: var(--te
     .nav-container { flex-direction: column; gap: 15px; }
     .nav-links { gap: 15px; font-size: 0.85rem; flex-wrap: wrap; justify-content: center; }
 
-    /* Resume viewer shorter on mobile */
     .resume-viewer { height: 600px; }
 }
