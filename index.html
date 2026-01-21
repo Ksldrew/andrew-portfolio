@@ -50,78 +50,88 @@
         </div>
     </header>
 
+    <!-- TECHNICAL EXPERTISE (ONLY 2, SHORT SUMMARY FOR SMALL BOX) -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
 
+                <!-- Data Mining (based on README 2) -->
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                    <h3>Data Mining</h3>
+                    <p>
+                        Data preprocessing for data mining: cleaning missing/duplicate/inconsistent data, normalization & scaling,
+                        encoding, and basic feature reduction to prepare datasets for analysis and ML.
+                    </p>
+                </div>
+
+                <!-- AI Research (based on README 1) -->
                 <div class="skill-card">
                     <div class="icon-box"><i class="fas fa-brain"></i></div>
-                    <h3>AI & Research</h3>
-                    <p>Focus on TSK-FIS (Fuzzy Inference Systems), Modular Architectures, and XAI for medical diagnostics.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="icon-box"><i class="fab fa-python"></i></div>
-                    <h3>Data Science</h3>
-                    <p>Proficient in Python, PyTorch, NumPy, Pandas, and Scikit-Learn for data preprocessing and modeling.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>App Development</h3>
-                    <p>Experience building cross-platform mobile apps using .NET MAUI, C#, and XAML.</p>
+                    <h3>AI Research</h3>
+                    <p>
+                        Modular TSK-FIS for CVD risk prediction. Focus on module importance using risk score outputs, ROC-AUC,
+                        and confusion matrix for evaluation.
+                    </p>
                 </div>
 
             </div>
         </div>
     </section>
 
+    <!-- FEATURED PROJECTS (ONLY 2 + VIEW BUTTON TO GITHUB) -->
     <section id="projects" class="section bg-darker">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
 
+                <!-- PROJECT 1: Heart Disease Risk Prediction -->
                 <article class="project-card">
                     <div class="card-content">
-                        <div class="badge">Capstone Research</div>
+                        <div class="badge">AI Research</div>
                         <h3>Heart Disease Risk Prediction</h3>
-                        <p>A Modular TSK-FIS model designed to predict heart attacks. Unlike black-box models, this system provides transparent "If-Then" rules.</p>
+                        <p>
+                            Traditional vs Modular TSK-FIS for CVD risk scoring. Modular design improves scalability and
+                            interpretability by grouping features into meaningful modules.
+                        </p>
                         <div class="tags">
                             <span>Python</span>
-                            <span>Fuzzy Logic</span>
-                            <span>Research</span>
+                            <span>TSK-FIS</span>
+                            <span>ROC-AUC</span>
+                        </div>
+
+                        <!-- Replace href with your GitHub link -->
+                        <div style="margin-top: 22px;">
+                            <a class="btn btn-secondary" href="https://github.com/Ksldrew/Fuzzy-Inference-Comparing-Model.git" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> View
+                            </a>
                         </div>
                     </div>
-                    <!-- Removed: View Research -->
                 </article>
 
+                <!-- PROJECT 2: Data Mining (Preprocessing) -->
                 <article class="project-card">
                     <div class="card-content">
-                        <div class="badge">Software Dev</div>
-                        <h3>.NET MAUI Mobile App</h3>
-                        <p>A cross-platform prototype application. Solved complex challenges in XAML UI binding and C# backend integration.</p>
-                        <div class="tags">
-                            <span>C#</span>
-                            <span>.NET MAUI</span>
-                            <span>Mobile</span>
-                        </div>
-                    </div>
-                    <!-- Removed: View Code -->
-                </article>
-
-                <article class="project-card">
-                    <div class="card-content">
-                        <div class="badge">Data Analysis</div>
-                        <h3>Healthcare Data Pipeline</h3>
-                        <p>Exploratory data analysis (EDA) suite handling normalization, class balancing, and outlier detection.</p>
+                        <div class="badge">Data Mining</div>
+                        <h3>Data Preprocessing for Data Mining</h3>
+                        <p>
+                            A simple preprocessing workflow: inspect data, handle missing/inconsistent entries, clean duplicates,
+                            apply normalization, and output a structured dataset for data mining tasks.
+                        </p>
                         <div class="tags">
                             <span>Pandas</span>
-                            <span>Matplotlib</span>
-                            <span>Data Cleaning</span>
+                            <span>Cleaning</span>
+                            <span>Normalization</span>
+                        </div>
+
+                        <!-- Replace href with your GitHub link -->
+                        <div style="margin-top: 22px;">
+                            <a class="btn btn-secondary" href="https://github.com/Ksldrew/ICU-Prediction.git" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> View
+                            </a>
                         </div>
                     </div>
-                    <!-- Removed: View Notebook -->
                 </article>
 
             </div>
@@ -135,7 +145,6 @@
             <a href="mailto:ksldrew0822@gmail.com" class="btn btn-primary big-btn">Send Email</a>
 
             <div class="social-links">
-
                 <a href="https://www.linkedin.com/in/andrew-lim-080896336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
@@ -147,7 +156,6 @@
                 <a href="https://wa.me/qr/GBNCFEST4KIVO1" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-
             </div>
         </div>
     </section>
